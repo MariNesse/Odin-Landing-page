@@ -1,0 +1,33 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.box1 {
+    background-color: #1f2937;
+    color: #f9faf8
+}
+
+.box3 {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.footer {
+    background-color: #3882F6;
+    margin: 50px;
+    padding: 20px;
+}
