@@ -1,33 +1,214 @@
-.body {
+* {
+/* border: 1px solid black; */
+}
+
+a:visited {
+    color: #E5E7EB;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Roboto-italic;
+    src: url(./font/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    font-family: Roboto;
+}
+
+/* HEADER */ 
+.header {
+    background-color: #1F2937;
+    color: #f9faf8;
+}
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 250px;
+    }
+
+        ul {
+            list-style-type: none;
+            color: #E5E7EB;
+            display: flex;
+            font-size: 18px;
+            gap: 20px; 
+        } 
+
+        .logo {
+            display: flex;
+            align-self: center;
+            font-size: 24px;
+        }
+
+    .content {
+        display: flex; 
+        padding: 100px 250px;
+        
+    }
+
+    .mjau {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        gap: 15px;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
+        flex-shrink: 2;
+    }
+    
+        .overskrift {
+            font-size: 48px;
+            font-weight: 900;
+            flex-wrap: wrap;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #E5E7EB;
+        }
+
+        .button {
+            background-color: #3882f6;
+            max-width: fit-content;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+        .image {
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 500px;
+            max-height: 246px;
+            flex-shrink: 0;
+        }
+
+/* BOX1 */
+.BOX1 {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 40px 400px 80px 400px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: 1F2937;
+    font-weight: 900;
+    padding-bottom: 40px;
+}
+
+.IMAGES, .TEXT {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img1, .img2, .img3, .img4 {
+    border: solid 5px #3882F6;
+    padding: 75px;
+    border-radius: 20px;
+}
+
+.text1, .text2, .text3, .text4 {
+    width: 160px;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+/* BOX2 */
+.BOX2 {
+    display: flex;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    padding: 80px 400px 80px 400px;
+    /* align-content: center; */
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-family: Roboto-italic;
+    font-weight: lighter;
+}
+
+.THOR {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* BOX3 */
+.BOX3 {
+    background-color: #3882F6;
+    display: flex;
+    margin: 80px 250px;
+    border-radius: 10px;
+    padding: 80px 150px;
+    color: #f9faf8;
+    font-size: 24px;
+    justify-content: space-between;
+}
+
+.CTA-text {
     display: flex;
     flex-direction: column;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
+    gap: 5px;
 }
 
-.header {
+.topp {
+    padding: 0;
+    font-weight: 900;
+}
+
+.bottom {
+    font-size: 18px;
+}
+
+.Signup-button {
     display: flex;
+    border: 1px solid white;
+    align-self: flex-end;
+    padding: 5px 40px;
+    border-radius: 10px;
+    font-weight: 900;
 }
 
-ul {
-    display: flex;
-    list-style-type: none;
-}
-
-.box1 {
-    background-color: #1f2937;
-    color: #f9faf8
-}
-
-.box3 {
-    background-color: #e5e7eb;
-    font-size: 36px;
-    font-style: italic;
-    color: #1f2937;
-}
-
+/* FOOTER */
 .footer {
-    background-color: #3882F6;
-    margin: 50px;
-    padding: 20px;
+    background-color: #1f2937;
+    color: #f9faf8;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
+
+
+
+    
+    
